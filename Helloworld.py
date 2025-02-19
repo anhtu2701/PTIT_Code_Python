@@ -43,14 +43,15 @@
 
 # print(ans)
 
-def convert_dis(km):
-  m = km * 1000
-  return m
-km = 55
-m = convert_dis(km)
-print("The distance in mile is: " + str(m))
+# def convert_dis(km):
+#   m = km * 1000
+#   return m
+# km = 55
+# m = convert_dis(km)
+# print("The distance in mile is: " + str(m))
 
-def print_seconds(hours,minutes,seconds):
-  res = hours * 3600 + minutes * 60 + seconds
-  print("Tổng số giây là:",res)
-print_seconds(2,30,20)
+# def print_seconds(hours,minutes,seconds):
+#   res = hours * 3600 + minutes * 60 + seconds
+#   print("Tổng số giây là:",res)
+# print_seconds(2,30,20)
+

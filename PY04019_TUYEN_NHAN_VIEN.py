@@ -19,8 +19,8 @@ class Thisinh:
             self.score = round(self.score,2)
         self.res = Chuanhoa(self.score)
 
-    def __lt__(self, other):
-        return -self.score < -other.score
+    # def __lt__(self, other):
+    #     return -self.score < -other.score
     
     def __str__(self):
         return f"{self.id} {self.name} {self.score:.2f} {self.res}"
@@ -33,7 +33,7 @@ for _ in range(1, n+1):
     score_lt = float(input())
     score_th = float(input())
     people.append(Thisinh(id, name, score_lt, score_th))
-people.sort()
+people.sort(key=lambda x: -x.score)
 for person in people:
     print(person)
 
